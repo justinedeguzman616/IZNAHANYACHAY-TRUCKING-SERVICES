@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form - IznahAnyaChay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="RequestForm.css">
+</head>
+<body>
+
+<div class="top-info-bar">
+    <div class="content-container top-info-content">
+        <div class="central-info">
+            <div>For more Information/Inquiries?</div>
+            <div class="contact-group">
+                <div><span class="contact-item-icon">✉️</span> fbg030782@gmail.com</div>
+                <div><span class="contact-item-icon">📞</span> 0915 293 2066</div>
+                <div><span class="contact-item-icon">☎️</span> 0947 825 6206</div>
+            </div>
+        </div>
+        <a href="adminLogin.html" class="admin-login-link">
+            <span class="icon-user-right">👤</span>
+        </a>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="content-container header-content">
+        <div class="logo">
+            <a href="homepage.html">IZNAHANYACHAY <br>TRACKING SERVICES</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="homepage.html#about">ABOUT</a></li> 
+                <li><a href="homepage.html#services">SERVICES</a></li>
+                <li><a href="RequestForm.html" class="active">REQUEST</a></li> 
+                <li><a href="homepage.html#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class-="button-container">
+            <button id="trackShipmentsBtn" class="track-shipments-button">
+                TRACK YOUR <br>SHIPMENTS <span class="icon-truck"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="request-form-section" id="request">
+    <div class="content-container request-form-container">
+        <h1>REQUEST FORM</h1>
+
+        <form id="requestForm">
+            <h2 class="form-section-title">Client Information</h2>
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="client_name">Full Name:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="client_name" name="client_name" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="company_name">Company Name (if any):</label>
+                    <div class="input-with-button">
+                        <input type="text" id="company_name" name="company_name" placeholder="Type here...">
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact_number">Contact Number:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="contact_number" name="contact_number" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="email_address">Email Address:</label>
+                    <div class="input-with-button">
+                        <input type="email" id="email_address" name="email_address" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="pickup_address">Pickup Address:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="pickup_address" name="pickup_address" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="delivery_address">Delivery Address:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="delivery_address" name="delivery_address" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="form-section-title">Shipment Details</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="type_of_goods">Type of Goods:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="type_of_goods" name="type_of_goods" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="num_packages">Number of Packages / Pallets:</label>
+                    <div class="input-with-button">
+                        <input type="number" id="num_packages" name="num_packages" placeholder="Type here..." min="1" required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                    <div class="form-group">
+                    <label for="total_weight">Estimated Total Weight (kg):</label>
+                    <div class="input-with-button">
+                        <input type="number" id="total_weight" name="total_weight" placeholder="Type here..." min="0" required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dimensions">Dimensions (L x W x H):</label>
+                    <div class="input-with-button">
+                        <input type="text" id="dimensions" name="dimensions" placeholder="E.g. 2m x 1.5m x 1m" required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="preferred_truck_type">Preferred Truck Type:</label>
+                    <div class="input-with-button">
+                        <select id="preferred_truck_type" name="preferred_truck_type">
+                            <option value="">Select type...</option>
+                            <option value="open">Open</option>
+                            <option value="closed">Closed</option>
+                        </select>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fragile_handling">Fragile or Special handling needed?</label>
+                    <div class="input-with-button">
+                        <select id="fragile_handling" name="fragile_handling">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pickup_datetime">Pickup Date & Time:</label>
+                    <div class="input-with-button">
+                        <input type="datetime-local" id="pickup_datetime" name="pickup_datetime" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="delivery_datetime">Delivery Date & Time:</label>
+                    <div class="input-with-button">
+                        <input type="datetime-local" id="delivery_datetime" name="delivery_datetime" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="additional_notes">Additional Notes / Special Instructions:</label>
+                    <div class="input-with-button">
+                        <textarea id="additional_notes" name="additional_notes" placeholder="E.g.2m x 1.5m x 1m" rows="1"></textarea>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="form-section-title">Full Name and Signature</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="full_name_sig">Full Name:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="full_name_sig" name="full_name_sig" placeholder="Type here..." required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signature">Signature:</label>
+                    <div class="input-with-button">
+                        <input type="text" id="signature" name="signature" placeholder="Type your full name as signature" required>
+                        <button type="button">Erase</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="form-section-title">Available Trucks</h2>
+            <div class="truck-selection-grid">
+                <div class="truck-option">
+                    <input type="checkbox" id="truckA" name="available_trucks[]" value="Truck A">
+                    <label for="truckA">Truck A</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckF" name="available_trucks[]" value="Truck F">
+                    <label for="truckF">Truck F</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckB" name="available_trucks[]" value="Truck B">
+                    <label for="truckB">Truck B</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckG" name="available_trucks[]" value="Truck G">
+                    <label for="truckG">Truck G</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckC" name="available_trucks[]" value="Truck C">
+                    <label for="truckC">Truck C</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckH" name="available_trucks[]" value="Truck H">
+                    <label for="truckH">Truck H</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckD" name="available_trucks[]" value="Truck D">
+                    <label for="truckD">Truck D</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckI" name="available_trucks[]" value="Truck I">
+                    <label for="truckI">Truck I</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckE" name="available_trucks[]" value="Truck E">
+                    <label for="truckE">Truck E</label>
+                </div>
+                <div class="truck-option">
+                    <input type="checkbox" id="truckJ" name="available_trucks[]" value="Truck J">
+                    <label for="truckJ">Truck J</label>
+                </div>
+            </div>
+            
+            <div class="submit-area">
+                <button type="submit" class="submit-request-button">Submit Request</button> 
+            </div>
+        </form>
+
+        <div class="additional-options">
+            <p>Let's get your delivery moving! Choose one of the following other options to submit your service request:</p>
+            <p>Option 1: Fill Out Our Online Form</p>
+            <div class="option-links">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-u_2Ni1R3o1k9mPpimq1ATXxmYCJUMQn6PmUfWEfCfuqXgA/viewform" target="_blank">IznahAnyaChay Request Form - GFORMS Format</a>
+            </div>
+            <p>Option 2: Download the Printable Form</p>
+            <div class="option-links">
+                <a href="https://docs.google.com/document/d/1D5YOH2Vp78WRxUMKzWFFFK9VC7h_cFvFKRebfO3ZLNo/edit?tab=t.0" target="_blank">IznahAnyaChay Request Form - GDOCS Format</a>
+            </div>
+            <p>And send it to our GMail Account</p>
+        </div>
+        
+        <div class="contact-info-bottom">
+            For questions or immediate help, contact us at <strong>0915 293 2066 / 0947 825 6206</strong> or email us at <a href="mailto:fbg030782@gmail.com">fbg030782@gmail.com</a>.
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="content-container footer-content">
+        <div class="footer-column-main-left">
+            <div class="footer-logo">
+                <a href="homepage.html">IZNAHANYACHAY<span> TRUCKING SERVICES</span></a>
+            </div>
+            <p class="footer-description">
+                IznahAnyaChay Trucking Services has been a trusted provider in trucking and transport services for six years and operating 24/7 with a dedicated team of 10 employees.
+            </p>
+        </div>
+
+        <div class="footer-columns-right">
+            <div class="footer-column footer-column-contact">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span>Operator - Floriza B. Galang</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span>fbg030782@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                    <span>244 Bonga Mayor, Bustos, Bulacan</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-phone-volume"></i></span>
+                    <span>0915 293 2066 / 0947 825 6206</span>
+                </div>
+            </div>
+
+            <div class="footer-column footer-column-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#about">About</a></li>
+                    <li><a href="homepage.html#services">Services</a></li>
+                    <li><a href="RequestForm.html">Request</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-column footer-column-track">
+                <h3>Track Your Shipments</h3>
+                <button id="trackNowBtn" class="track-now-button">
+                    TRACK NOW! <i class="fa-solid fa-truck-fast"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2025 IznahAnyaChay Logistics. All Rights Reserved.</p>
+            <div class="footer-policy-links-bottom">
+                <a href="PrivacyPolicy.html">Privacy Policy</a> 
+                <a href="Termsofservice.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="successPopup" class="popup-overlay">
+    <div class="popup-card">
+        <div class="popup-icon-container">
+            <svg class="popup-icon-svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12l2.5 2.5L16 8"></path>
+            </svg>
+        </div>
+        <div class="popup-success-label">Success</div>
+        <p class="popup-main-text">
+            Thank you for your request.<br>
+            We are working hard to find the best service and deals for you.
+        </p>
+        <p class="popup-sub-text">
+            Shortly you will find a confirmation in your email.
+        </p>
+        <button id="popupContinueBtn" class="popup-btn-continue">Continue</button>
+    </div>
+</div>
+
+<script src="RequestForm.js"></script>
+</body>
+</html>

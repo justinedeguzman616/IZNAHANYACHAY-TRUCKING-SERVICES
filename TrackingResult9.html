@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Result</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="TrackingResult.css">
+</head>
+<body>
+
+<div class="top-info-bar">
+    <div class="content-container top-info-content">
+        <div class="central-info">
+            <div>For more Information/Inquiries?</div>
+            <div class="contact-group">
+                <div><span class="contact-item-icon">✉️</span> fbg030782@gmail.com</div>
+                <div><span class="contact-item-icon">📞</span> 0915 293 2066</div>
+                <div><span class="contact-item-icon">☎️</span> 0947 825 6206</div>
+            </div>
+        </div>
+        <a href="adminLogin.html" class="admin-login-link"><span class="icon-user-right">👤</span></a>
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="content-container header-content">
+        <div class="logo">
+            <a href="homepage.html">IZNAHANYACHAY <br>TRACKING SERVICES</a>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="homepage.html#about">ABOUT</a></li> 
+                <li><a href="homepage.html#services">SERVICES</a></li>
+                <li><a href="RequestForm.html">REQUEST</a></li> 
+                <li><a href="homepage.html#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+        
+        <div class="button-container">
+            <button id="trackShipmentsBtn" class="track-shipments-button">
+                TRACK YOUR <br>SHIPMENTS <span class="icon-truck"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="page-body-content">
+    
+    <div class="tracking-result-wrapper">
+        <h1>TRACKING RESULT</h1>
+        
+        <h3>Tracking Number</h3>
+
+        <form id="trackingForm" class="tracking-form">
+            <input type="text" id="trackingInput" placeholder="Enter Tracking Number" name="tracking_number" aria-label="Tracking Number Input">
+            <button type="submit" class="search-button">
+                <span class="icon-search"></span>
+            </button>
+        </form>
+
+        <h3 class="carrier-details-title">Carrier Address Details</h3>
+
+        <div class="tracking-card-single-image-style">
+            <div class="card-header-block">
+                <div class="card-info-left">
+                    <div class="status">You are currently tracking</div>
+                    <div class="tracking-details">
+                        <p>TRACKING NUMBER: <strong>100000009</strong></p>
+                        <p>Estimated Date of Delivery: March 14, 2025</p>
+                    </div>
+                </div>
+                <div class="card-info-right">
+                    <p>Truck Driver: Therese Alvarado</p>
+                    <p>Contact No.: +639189999123</p>
+                </div>
+            </div>
+
+            <div class="card-timeline-body">
+                <div class="tracking-timeline-image-style">
+                    
+                    <div class="tracking-event-image-style">
+                        <span class="event-icon-container latest-event-dot"></span>
+                        <span class="event-datetime-group">
+                            March 14, 2025 • 08:55
+                        </span>
+                        <span class="event-text bold-status" style="color: #333;"> 
+                            Shipment Received (Puerto Princesa City, Palawan)
+                        </span>
+                    </div>
+                    
+                    <div class="tracking-event-image-style">
+                        <span class="event-icon-container default-dot"></span>
+                        <span class="event-datetime-group">
+                            March 14, 2025 • 05:50
+
+                        </span>
+                        <span class="event-text">
+                            Out for Delivery in Area (Brooke's Point, Palawan)
+                        </span>
+                    </div>
+                    
+                    <div class="tracking-event-image-style">
+                        <span class="event-icon-container default-dot"></span>
+                        <span class="event-datetime-group">
+                            March 14, 2025 • 03:40
+                        </span>
+                        <span class="event-text">
+                            Ongoing Delivery (Roxas, Palawan)
+                        </span>
+                    </div>  
+                    
+                    <div class="tracking-event-image-style">
+                        <span class="event-icon-container default-dot"></span>
+                        <span class="event-datetime-group">
+                            March 13, 2025 •  22:10
+                        </span>
+                        <span class="event-text">
+                            Shipment Ready (El Nido, Palawan)
+                        </span>
+                    </div>
+                    
+                    <div class="tracking-event-image-style last-event">
+                        <span class="event-icon-container default-dot"></span>
+                        <span class="event-datetime-group">
+                            March 13, 2025 •  19:50
+                        </span>
+                        <span class="event-text">
+                            Shipment Confirmed (Coron, Palawan)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="content-container footer-content">
+        
+        <div class="footer-column-main-left">
+            <div class="footer-logo">
+                <a href="homepage.html">IZNAHANYACHAY<span> TRUCKING SERVICES</span></a>
+            </div>
+            <p class="footer-description">
+                IznahAnyaChay Trucking Services has been a trusted provider in trucking and transport services for six years and operating 24/7 with a dedicated team of 10 employees.
+            </p>
+        </div>
+
+        <div class="footer-columns-right">
+            <div class="footer-column footer-column-contact">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-user"></i></span><span>Operator - Floriza B. Galang</span></div>
+                <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-envelope"></i></span><span>fbg030782@gmail.com</span></div>
+                <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-house-chimney"></i></span><span>244 Bonga Mayor, Bustos, Bulacan</span></div>
+                <div class="footer-contact-item"><span class="icon"><i class="fa-solid fa-phone-volume"></i></span><span>0915 293 2066 / 0947 825 6206</span></div>
+            </div>
+
+            <div class="footer-column footer-column-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#about">About</a></li>
+                    <li><a href="homepage.html#services">Services</a></li>
+                    <li><a href="RequestForm.html">Request</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column footer-column-track">
+                <h3>Track Your Shipments</h3>
+                <button id="trackNowBtn" class="track-now-button">
+                    TRACK NOW! <i class="fa-solid fa-truck-fast"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2025 IznahAnyaChay Logistics. All Rights Reserved.</p>
+            <div class="footer-policy-links-bottom">
+                <a href="PrivacyPolicy.html">Privacy Policy</a> 
+                <a href="Termsofservice.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="TrackingResult.js"></script>
+</body>
+</html>

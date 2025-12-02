@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminRequestForm</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="AdminRequestForm.css">
+</head>
+<body>
+
+<div class="top-info-bar">
+    <div class="content-container top-info-content">
+        <div class="central-info">
+            <div>For more Information/Inquiries?</div>
+            <div class="contact-group">
+                <div><span class="contact-item-icon">✉️</span> fbg030782@gmail.com</div>
+                <div><span class="contact-item-icon">📞</span> 0915 293 2066</div>
+                <div><span class="contact-item-icon">☎️</span> 0947 825 6206</div>
+            </div>
+        </div>
+        <a href="adminLogin.html" class="admin-login-link">
+            <span class="icon-user-right">👤</span>
+        </a>
+    </div>
+</div>
+<header class="main-header">
+    <div class="content-container header-content">
+        <div class="logo">
+            <a href="homepage.html">IZNAHANYACHAY <br>TRACKING SERVICES</a>
+        </div>
+
+        <div class="center-title">ADMIN PANEL</div>
+
+        <nav>
+            <ul>
+                <li><a href="TrackingList.html">LISTS</a></li>
+                <li><a href="#">FORMS</a></li>
+                <li><a href="TruckGPSUpdate.html">UPDATES</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="new-page-content">
+    <h1 class="page-title">REQUEST FORMS QUEUE</h1>
+    
+    <div class="request-queue-card">
+        <div class="card-header">
+            <h2>Tracking Request Queue</h2>
+            <span>Admin Dashboard</span>
+        </div>
+        
+        <table class="queue-table">
+            <thead>
+                <tr>
+                    <th>REQUEST ID</th>
+                    <th>CUSTOMER NAME</th>
+                    <th>SERVICE TYPE</th>
+                    <th>STATUS</th>
+                    <th>SUBMITTED AT</th>
+                    <th>ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>REQ-00123</td>
+                    <td>Maria Santos</td>
+                    <td>Truck Delivery</td>
+                    <td><span class="status-tag status-pending">Pending</span></td>
+                    <td>Oct 21, 2025</td>
+                    <td>
+                        <button class="action-button btn-accept">Accept</button>
+                        <button class="action-button btn-reject">Reject</button>
+                        <button class="action-button btn-delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>REQ-00124</td>
+                    <td>Juan Dela Cruz</td>
+                    <td>Delivery Request</td>
+                    <td><span class="status-tag status-accepted">Accepted</span></td>
+                    <td>Oct 19, 2025</td>
+                    <td>
+                        <button class="action-button btn-accept">Accept</button>
+                        <button class="action-button btn-reject">Reject</button>
+                        <button class="action-button btn-delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>REQ-00125</td>
+                    <td>Ana Reyes</td>
+                    <td>Shipment Inquiry</td>
+                    <td><span class="status-tag status-rejected">Rejected</span></td>
+                    <td>Oct 18, 2025</td>
+                    <td>
+                        <button class="action-button btn-accept">Accept</button>
+                        <button class="action-button btn-reject">Reject</button>
+                        <button class="action-button btn-delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<footer class="main-footer">
+    <div class="content-container footer-content">
+        
+        <div class="footer-column-main-left">
+            <div class="footer-logo">
+                <a href="homepage.html">IZNAHANYACHAY<span> TRUCKING SERVICES</span></a>
+            </div>
+            <p class="footer-description">
+                IznahAnyaChay Trucking Services has been a trusted provider in trucking and transport services for six years and operating 24/7 with a dedicated team of 10 employees.
+            </p>
+        </div>
+
+        <div class="footer-columns-right">
+
+            <div class="footer-column footer-column-contact">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <span>Operator - Floriza B. Galang</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span>fbg030782@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                    <span>244 Bonga Mayor, Bustos, Bulacan</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="icon"><i class="fa-solid fa-phone-volume"></i></span>
+                    <span>0915 293 2066 / 0947 825 6206</span>
+                </div>
+            </div>
+
+            <div class="footer-column footer-column-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="homepage.html#about">About</a></li>
+                    <li><a href="homepage.html#services">Services</a></li>
+                    <li><a href="RequestForm.html">Request</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column footer-column-track">
+                <h3>Track Your Shipments</h3>
+                <button id="trackNowBtn" class="track-now-button">
+                    TRACK NOW! <i class="fa-solid fa-truck-fast"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2025 IznahAnyaChay Logistics. All Rights Reserved.</p>
+            <div class="footer-policy-links-bottom">
+                <a href="PrivacyPolicy.html">Privacy Policy</a> 
+                <a href="Termsofservice.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="AdminRequestForm.js"></script>
+</body>
+</html>
